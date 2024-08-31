@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.element {
+    width: 500px; /* I-set ang lapad ng element */
+    height: 500px; /* I-set ang taas ng element */
+    background-image: url(screenshot.png); /* Path ng image */
+    background-size: cover; /* I-adjust ang laki ng image */
+    background-position: center; /* I-center ang image */
+    background-repeat: no-repeat; /* Huwag mag-repeat ang image */
+  }
+  
+
+.draggable-container {
+    position: relative;
+    z-index: 10;
+    top: 25px;
+    left: 10px;
+
+
+}
+
+.draggable-part {
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    cursor: grab;
+}
+
+#part1 { 
+    position: fixed; /* O pwede ring 'absolute' depende sa requirement */
+  top: 42.3vh;
+  right: 49.1vw;
+}
